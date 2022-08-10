@@ -11,6 +11,7 @@
   padding: 0 40px;
   position: sticky;
   top: 0;
+  background-color: #000000;
 }
 
 .main {
@@ -19,6 +20,32 @@
   display: flex;
   flex-direction: column;
   /*background-image: linear-gradient(#000000, #482700);*/
+  padding: 0 120px;
+}
+
+.presentationContainer {
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+}
+
+.presentationInfoContainer {
+  flex: 4;
+}
+
+.h1 {
+  font-size: 45px;
+  margin-top: 20px;
+}
+
+.infoDescription {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.presentationImgContainer {
+  flex: 6;
 }
 
 .footer {

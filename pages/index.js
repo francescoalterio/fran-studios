@@ -30,7 +30,25 @@ export default function Home() {
           />
         </div>
       </nav>
-      <main className={styles.main}></main>
+
+      <main className={styles.main}>
+        <div className={styles.presentationContainer}>
+          <div className={styles.presentationInfoContainer}>
+            <h5 style={{ color: colors.LIGHT_ORANGE }}>Mobile development</h5>
+            <h1 className={styles.h1}>Work that we produce for our clients</h1>
+            <p className={styles.infoDescription}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industrys standard.
+            </p>
+            <PrimaryBtnLink
+              title="See all apps"
+              bgColor={colors.LIGHT_ORANGE}
+              borderRadius={9999}
+            />
+          </div>
+          <div className={styles.presentationImgContainer}></div>
+        </div>
+      </main>
 
       <footer className={styles.footer}></footer>
     </>
