@@ -6,6 +6,7 @@ import PrimaryBtnLink from "../components/PrimaryBtnLink";
 import { colors } from "../constants/colors";
 import NavLink from "../components/NavLink";
 import LogoLink from "../components/LogoLink";
+import Title from "../components/Title";
 
 export default function Home() {
   return (
@@ -16,23 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className={styles.nav}>
-        <LogoLink />
-        <div>
-          <NavLink title="Home" to="" />
-          <NavLink title="Apps" to="apps" />
-          <NavLink title="About us" to="about-us" />
-
-          <PrimaryBtnLink
-            title="Contact us"
-            bgColor={colors.LIGHT_ORANGE}
-            borderRadius={5}
-          />
-        </div>
-      </nav>
-
       <main className={styles.main}>
-        <div className={styles.presentationContainer}>
+        <section className={styles.presentationContainer}>
           <div className={styles.presentationInfoContainer}>
             <h5 style={{ color: colors.LIGHT_ORANGE }}>Mobile development</h5>
             <h1 className={styles.h1}>Work that we produce for our clients</h1>
@@ -46,8 +32,27 @@ export default function Home() {
               borderRadius={9999}
             />
           </div>
-          <div className={styles.presentationImgContainer}></div>
-        </div>
+          <div className={styles.presentationImgContainer}>
+            <Image
+              src="/presentation.png"
+              width={280}
+              height={500}
+              alt="presentation"
+            />
+          </div>
+        </section>
+        <section className={styles.trendingAppsContainer}>
+          <div className={styles.trendingTitleContainer}>
+            <Title title="Currently Trending Apps" />
+            <PrimaryBtnLink
+              title="SEE ALL"
+              borderRadius={5}
+              bgColor="rgba(255,255,255,0.11)"
+            />
+          </div>
+          <div className={styles.trendingAppsCardContainer}></div>
+        </section>
+        <section className={styles.relleno}></section>
       </main>
 
       <footer className={styles.footer}></footer>

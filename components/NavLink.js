@@ -6,12 +6,13 @@ import { colors } from "../constants/colors";
 function NavLink({ title, to }) {
   const router = useRouter();
 
-  const path = router.asPath.split("#")[1];
+  const path = router.asPath.split("/")[1];
+  console.log(path);
 
   const linkColor = !path && title === "Home" ? true : path === to;
   return (
     <>
-      <Link href={`#${to}`}>
+      <Link href={`/${to}`}>
         <a>{title}</a>
       </Link>
       <style jsx>{`
