@@ -3,9 +3,11 @@ import styles from "../styles/Apps.module.css";
 
 function Apps() {
   return (
-    <main>
-      <section className={styles.relleno}>Apps</section>
-    </main>
+    <>
+      <main>
+        <section className={styles.relleno}>Apps</section>
+      </main>
+    </>
   );
 }
 

@@ -6,7 +6,6 @@ function BackgroundGradient({ children }) {
       <div>{children}</div>
       <style jsx>{`
         div {
-          flex: 1;
           display: flex;
           flex-direction: column;
           align-items: center;

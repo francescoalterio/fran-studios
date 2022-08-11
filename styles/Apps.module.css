@@ -1,5 +1,5 @@
 .relleno {
   width: 100%;
-  background-color: aqua;
   display: flex;
+  padding-top: 5rem;
 }
