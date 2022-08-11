@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <section className={styles.presentationContainer}>
           <div className={styles.presentationInfoContainer}>
             <h5 style={{ color: colors.LIGHT_ORANGE }}>Mobile development</h5>
@@ -67,8 +67,6 @@ export default function Home() {
         </section>
         <section className={styles.relleno}></section>
       </main>
-
-      <footer className={styles.footer}></footer>
     </>
   );
 }
