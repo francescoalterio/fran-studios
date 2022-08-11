@@ -21,10 +21,10 @@ function AppCard({ name, preview, icon }) {
           }
 
           .imgContainer {
-            width: 12rem;
-            height: 15rem;
+            width: 100%;
             border-radius: 1.5rem;
             position: relative;
+            max-width: 400px;
           }
 
           .preview {

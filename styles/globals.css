@@ -13,6 +13,15 @@ a {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+main {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 8rem;
+  max-width: 1700px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -9,6 +9,18 @@ function MyApp({ Component, pageProps }) {
       <BackgroundGradient>
         <Component {...pageProps} />
       </BackgroundGradient>
+      <footer
+        style={{
+          width: "100%",
+          height: 100,
+          backgroundColor: "#000000",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        Footer
+      </footer>
     </>
   );
 }

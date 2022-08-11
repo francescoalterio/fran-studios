@@ -1,7 +1,5 @@
-.main {
-  min-height: 100vh;
-  flex: 1;
+.relleno {
+  width: 100%;
+  background-color: aqua;
   display: flex;
-  flex-direction: column;
-  padding: 0 8rem;
 }

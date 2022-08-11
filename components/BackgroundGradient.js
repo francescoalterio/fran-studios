@@ -7,7 +7,9 @@ function BackgroundGradient({ children }) {
       <style jsx>{`
         div {
           flex: 1;
-          flex-direction: "column";
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           background-image: linear-gradient(#000000, #201100);
         }
       `}</style>
