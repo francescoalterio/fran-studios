@@ -7,6 +7,8 @@ import { colors } from "../constants/colors";
 import NavLink from "../components/NavLink";
 import LogoLink from "../components/LogoLink";
 import Title from "../components/Title";
+import AppCard from "../components/AppCard";
+import { apps } from "../apps";
 
 export default function Home() {
   return (
@@ -50,7 +52,18 @@ export default function Home() {
               bgColor="rgba(255,255,255,0.11)"
             />
           </div>
-          <div className={styles.trendingAppsCardContainer}></div>
+          <div className={styles.trendingAppsCardContainer}>
+            {apps
+              .filter((app) => app.trending)
+              .map((app) => (
+                <AppCard
+                  name={app.name}
+                  preview={app.preview}
+                  icon={app.icon}
+                  key={app.id}
+                />
+              ))}
+          </div>
         </section>
         <section className={styles.relleno}></section>
       </main>
