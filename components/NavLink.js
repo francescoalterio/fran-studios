@@ -7,7 +7,6 @@ function NavLink({ title, to }) {
   const router = useRouter();
 
   const path = router.asPath.split("/")[1];
-  console.log(path);
 
   const linkColor = !path && title === "Home" ? true : path === to;
   return (
@@ -22,6 +21,7 @@ function NavLink({ title, to }) {
             ? `2px solid ${colors.LIGHT_ORANGE}`
             : undefined};
           padding: 0 1px 4px 1px;
+          color: #ffffff;
         }
       `}</style>
     </>

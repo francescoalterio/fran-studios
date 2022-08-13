@@ -1,5 +1,44 @@
+.main {
+  min-height: 100vh;
+  padding: 0 8rem;
+  width: 100%;
+  max-width: 1700px;
+}
+
 .relleno {
   width: 100%;
   display: flex;
   padding-top: 5rem;
+}
+
+.appsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .appsContainer {
+    gap: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .main {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .appsContainer {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .appsContainer {
+    gap: 4rem;
+  }
 }

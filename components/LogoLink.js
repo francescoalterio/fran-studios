@@ -11,6 +11,7 @@ function LogoLink() {
         a {
           font-size: 20px;
           font-weight: bold;
+          color: #ffffff;
         }
       `}</style>
     </>

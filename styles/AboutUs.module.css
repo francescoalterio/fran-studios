@@ -1,5 +1,57 @@
-.relleno {
+.main {
+  min-height: 100vh;
+  padding: 0 8rem;
+  width: 100%;
+  max-width: 1700px;
+  padding-bottom: 3rem;
+}
+
+.iCircleSection {
   width: 100%;
   display: flex;
-  padding-top: 5rem;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.iCircleContainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iCircleImg {
+  width: 225px;
+  height: 225px;
+}
+
+.descriptionContainer {
+  margin-top: 3rem;
+}
+
+.description {
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .main {
+    padding: 0 1rem;
+  }
+  .iCircleContainer {
+    width: 200px;
+    height: 200px;
+  }
+  .iCircleImg {
+    width: 155px;
+    height: 155px;
+  }
 }

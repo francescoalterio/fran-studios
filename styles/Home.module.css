@@ -1,3 +1,10 @@
+.main {
+  min-height: 100vh;
+  padding: 0 8rem;
+  width: 100%;
+  max-width: 1700px;
+}
+
 .presentationContainer {
   width: 100%;
   display: flex;
@@ -45,6 +52,19 @@
   gap: 5rem;
 }
 
+.dream {
+  font-size: 1.7rem;
+  margin: 6.5rem 10rem 0 10rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.dreamImg {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 0.6rem;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -60,6 +80,18 @@
   height: 1000px;
   border: 2px solid green;
   margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .trendingAppsCardContainer {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .main {
+    padding: 0 4rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

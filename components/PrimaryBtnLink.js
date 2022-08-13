@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
-function PrimaryBtnLink({ title, bgColor, borderRadius }) {
+function PrimaryBtnLink({ title, bgColor, borderRadius, to }) {
   return (
     <>
-      <Link href="/">
+      <Link href={to || "/"}>
         <a>{title}</a>
       </Link>
       <style jsx>{`

@@ -24,7 +24,8 @@ function AppCard({ name, preview, icon }) {
             width: 100%;
             border-radius: 1.5rem;
             position: relative;
-            max-width: 400px;
+            max-width: 300px;
+            min-width: 130px;
           }
 
           .preview {
@@ -55,11 +56,55 @@ function AppCard({ name, preview, icon }) {
             text-align: center;
             margin-top: 2rem;
             font-weight: 700;
+            color: #ffffff
           }
 
           .container:hover {
             transform: scale(1.1);
           }
+
+
+          @media (max-width: 1024px) {
+            .imgContainer {
+           
+            max-width: 300px;
+            min-width: 100px;
+          }
+
+          @media (max-width: 900px) {
+            .imgContainer {
+           
+            max-width: 230px;
+
+          }
+
+           @media (max-width: 768px) {
+            .imgContainer {
+           
+            max-width: 150px;
+ 
+          }
+
+          @media (max-width: 641px) {
+            .imgContainer {
+           
+            max-width: 180px;
+ 
+          }
+
+          @media (max-width: 520px) {
+            .imgContainer {
+           
+            max-width: 150px;
+ 
+          }
+
+          @media (max-width: 495px) {
+            .imgContainer{
+              max-width: 100%
+            }
+          }
+            
         `}
       </style>
     </>
