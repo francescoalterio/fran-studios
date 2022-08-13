@@ -63,6 +63,7 @@ export default function Home() {
                   preview={app.preview}
                   icon={app.icon}
                   key={app.id}
+                  app={app.app}
                 />
               ))}
           </div>

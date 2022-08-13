@@ -5,7 +5,7 @@ export const apps = [
     preview: "/apps/cocktails/preview.jpg",
     icon: "/apps/cocktails/icon.png",
     alt: "img-cocktails-app",
-    app: "no tiene",
+    app: "",
     trending: true,
   },
 
@@ -15,6 +15,7 @@ export const apps = [
     preview: "/apps/projectmanager/preview.jpg",
     icon: "/apps/projectmanager/icon.png",
     alt: "img-project-manager",
+    app: "https://play.google.com/store/apps/details?id=com.francescox5.projectmanager",
     trending: true,
   },
   {
@@ -32,7 +33,7 @@ export const apps = [
     preview: "/apps/ipfinder/preview.jpg",
     icon: "/apps/ipfinder/icon.png",
     alt: "img-ipfinder",
-    app: "no tiene",
+    app: "",
     trending: true,
   },
 ];

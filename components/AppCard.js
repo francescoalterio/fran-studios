@@ -1,9 +1,9 @@
 import React from "react";
 
-function AppCard({ name, preview, icon }) {
+function AppCard({ name, preview, icon, app }) {
   return (
     <>
-      <div className="container">
+      <a href={app} className="container">
         <div className="imgContainer">
           <img src={preview} className="preview" />
           <div className="iconContainer">
@@ -12,12 +12,14 @@ function AppCard({ name, preview, icon }) {
         </div>
 
         <h5>{name}</h5>
-      </div>
+      </a>
       <style jsx>
         {`
           .container {
             cursor: pointer;
             transition: 0.2s;
+            background: none;
+            border: none;
           }
 
           .imgContainer {
