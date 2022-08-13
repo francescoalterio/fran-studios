@@ -1,4 +1,5 @@
 import React from "react";
+import PrimaryBtnLink from "../components/PrimaryBtnLink";
 import Title from "../components/Title";
 import { colors } from "../constants/colors";
 import styles from "../styles/AboutUS.module.css";
@@ -31,6 +32,12 @@ function AboutUs() {
             por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem
             Ipsum.
           </p>
+          <PrimaryBtnLink
+            title="Go to my Portfolio"
+            bgColor={colors.LIGHT_ORANGE}
+            borderRadius={5}
+            to="https://francescoalterio.vercel.app/"
+          />
         </section>
       </main>
     </>

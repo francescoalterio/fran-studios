@@ -13,6 +13,7 @@ function PrimaryBtnLink({ title, bgColor, borderRadius, to }) {
           border-radius: ${borderRadius}px;
           padding: 8px 21px;
           font-size: 14px;
+          color: #ffffff;
         }
       `}</style>
     </>

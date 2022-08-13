@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { colors } from "../constants/colors";
 import LogoLink from "./LogoLink";
 import NavLink from "./NavLink";
 import PrimaryBtnLink from "./PrimaryBtnLink";
 import { IoListSharp, IoCloseSharp } from "react-icons/io5";
+import { useRouter } from "next/router";
 
 function Nav() {
   const [mobileMenuIsActive, setMobileMenuIsActive] = useState(false);
+
+  const router = useRouter();
 
   const handleMobileMenuActive = () => {
     const $mobileMenu = document.querySelector(".navLinkMobileContainer");
@@ -18,6 +21,12 @@ function Nav() {
       setMobileMenuIsActive(false);
     }
   };
+
+  useEffect(() => {
+    if (mobileMenuIsActive) {
+      handleMobileMenuActive();
+    }
+  }, [router.asPath]);
 
   return (
     <>
@@ -44,12 +53,13 @@ function Nav() {
             <IoListSharp size={30} color="#ffffff" />
           )}
         </button>
+        <div className="navLinkMobileContainer">
+          <NavLink title="Home" to="" mobile />
+          <NavLink title="Apps" to="apps" mobile />
+          <NavLink title="About us" to="about-us" mobile />
+        </div>
       </nav>
-      <div className="navLinkMobileContainer">
-        <NavLink title="Home" to="" />
-        <NavLink title="Apps" to="apps" />
-        <NavLink title="About us" to="about-us" />
-      </div>
+
       <style jsx>{`
         nav {
           width: 100%;
@@ -62,6 +72,7 @@ function Nav() {
           top: 0;
           background-color: #000000;
           z-index: 100;
+          
         }
 
         .navButtonMobileContainer {
@@ -75,13 +86,14 @@ function Nav() {
         .navLinkMobileContainer {
           display: none;
           position: absolute;
-          background-color: #000000;
-          width: 100%;
+          background-color: rgba(0,0,0,0.7);
+          width: 100vw;
           transition: .5s;
           top: -200px;
-          padding: 2rem;
+
           border-bottom: 2px solid orange;
-          z-index: 80
+          z-index: 20;
+          left:0
         }
 
         .navLinkMobileContainerActive {
