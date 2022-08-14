@@ -26,7 +26,7 @@ function AboutUs() {
             programming has and decided to dedicate myself to this field.
           </p>
           <p className={styles.description} style={{ marginBottom: "2rem" }}>
-            Fran Studios was born from the idea of ​​creating a personal brand
+            Fran Studios was born from the idea of​ ​creating a personal brand
             on mobile application development. Simple, pleasant apps that solve
             user problems directly, whether they are tools or entertainment.
           </p>
