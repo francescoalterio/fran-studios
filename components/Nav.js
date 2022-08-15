@@ -41,6 +41,7 @@ function Nav() {
             title="Contact us"
             bgColor={colors.LIGHT_ORANGE}
             borderRadius={5}
+            to="/#contact-form"
           />
         </div>
         <button

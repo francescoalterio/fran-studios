@@ -18,6 +18,7 @@
 .h1 {
   font-size: 3rem;
   margin-top: 1rem;
+  color: #ffffff;
 }
 
 .infoDescription {
@@ -25,6 +26,7 @@
   margin-top: 1.2rem;
   margin-bottom: 2.4rem;
   font-weight: 300;
+  color: #ffffff;
 }
 
 .presentationImgContainer {
@@ -34,6 +36,10 @@
   padding-left: 2.5rem;
 }
 
+.imgPresentation {
+  width: 280px;
+  height: 500px;
+}
 .trendingAppsContainer {
   margin-top: 4rem;
 }
@@ -126,6 +132,60 @@
 
   .main {
     padding: 0 4rem;
+  }
+
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .imgPresentation {
+    width: 210px;
+    height: 370px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0 3rem;
+  }
+
+  .h1 {
+    font-size: 1.5rem;
+  }
+
+  .imgPresentation {
+    width: 180px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .presentationImgContainer {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    left: 0;
+  }
+
+  .presentationInfoContainer {
+    text-align: center;
+    position: relative;
+    z-index: 20;
+  }
+  .presentationContainer {
+    margin-bottom: 5rem;
+  }
+
+  .imgPresentation {
+    filter: brightness(20%);
   }
 }
 

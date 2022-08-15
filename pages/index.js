@@ -38,10 +38,9 @@ export default function Home() {
             />
           </div>
           <div className={styles.presentationImgContainer}>
-            <Image
+            <img
               src="/presentation.png"
-              width={280}
-              height={500}
+              className={styles.imgPresentation}
               alt="presentation"
             />
           </div>

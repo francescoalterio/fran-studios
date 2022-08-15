@@ -33,7 +33,7 @@ export const apps = [
     preview: "/apps/ipfinder/preview.jpg",
     icon: "/apps/ipfinder/icon.png",
     alt: "img-ipfinder",
-    app: "",
+    app: "https://play.google.com/store/apps/details?id=com.franstudios.ipfinder",
     trending: true,
   },
 ];
