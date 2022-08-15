@@ -67,7 +67,6 @@
 
 .features {
   width: 100%;
-
   display: flex;
   justify-content: space-evenly;
   margin-top: 4rem;
@@ -76,7 +75,7 @@
 .feature {
   width: 220px;
   height: 220px;
-  background-color: rgb(37, 25, 13);
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 15px;
   display: flex;
@@ -88,6 +87,17 @@
 .featureDescription {
   font-size: 13px;
   text-align: center;
+}
+
+.formContainer {
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+
+  align-items: center;
+  padding: 3rem 0;
+  border-radius: 15px;
+  flex-direction: column;
 }
 
 .footer {

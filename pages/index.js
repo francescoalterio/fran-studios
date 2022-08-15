@@ -10,6 +10,7 @@ import Title from "../components/Title";
 import AppCard from "../components/AppCard";
 import { apps } from "../apps";
 import { IoHardwareChipSharp, IoCloseSharp } from "react-icons/io5";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
@@ -101,6 +102,22 @@ export default function Home() {
               industry.
             </p>
           </div>
+        </section>
+        <section className={styles.formContainer} id="contact-form">
+          <h3 className={styles.dream} style={{ marginTop: 0 }}>
+            Contact Us
+          </h3>
+          <p
+            style={{
+              fontSize: 13,
+              fontWeight: 200,
+              marginTop: "0.5rem",
+              marginBottom: "2rem",
+            }}
+          >
+            Send us an email
+          </p>
+          <ContactForm />
         </section>
       </main>
     </>

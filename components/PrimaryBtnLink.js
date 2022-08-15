@@ -4,7 +4,7 @@ import Link from "next/link";
 function PrimaryBtnLink({ title, bgColor, borderRadius, to }) {
   return (
     <>
-      <Link href={to || "/"}>
+      <Link href={to || "/#contact-form"}>
         <a>{title}</a>
       </Link>
       <style jsx>{`
