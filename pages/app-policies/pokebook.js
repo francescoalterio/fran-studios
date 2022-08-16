@@ -14,13 +14,13 @@ function pokebook() {
         ></meta>
 
         <title>Fran Studios | PokeBook Terms</title>
-        <meta property="og:title" content="Fran Studios | PokeBook Terms" />
-
-        <meta name="description" content="Pokebook Terms and Conditions" />
         <meta
-          property="og:description"
-          content="Pokebook Terms and Conditions"
+          property="og:title"
+          content="Fran Studios | PokeBook Privacy policies"
         />
+
+        <meta name="description" content="Pokebook Privacy policies" />
+        <meta property="og:description" content="Pokebook Privacy policies" />
 
         <meta property="og:url" content="https://franstudios.vercel.app/" />
         <meta

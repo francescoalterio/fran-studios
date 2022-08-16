@@ -13,13 +13,16 @@ function pokebook() {
           content="width=device-width, initial-scale=1.0"
         ></meta>
 
-        <title>Fran Studios | Ip Finder Terms</title>
-        <meta property="og:title" content="Fran Studios | Ip Finder Terms" />
+        <title>Fran Studios | Project Manager Terms</title>
+        <meta
+          property="og:title"
+          content="Fran Studios | Project Manager Privacy policies"
+        />
 
-        <meta name="description" content="Ip Finder Terms and Conditions" />
+        <meta name="description" content="Project Manager Privacy policies" />
         <meta
           property="og:description"
-          content="Ip Finder Terms and Conditions"
+          content="Project Manager Privacy policies"
         />
 
         <meta property="og:url" content="https://franstudios.vercel.app/" />
@@ -34,17 +37,17 @@ function pokebook() {
         <h1>Privacy policies</h1>
         <ul>
           <li className={styles.li}>
-            Ip Finder does not collect any personal data from users.
+            Project Manager does not collect any personal data from users.
           </li>
-          <li className={styles.li}>Ip Finder does not log IP addresses.</li>
+          <li className={styles.li}>PokeBook does not log IP addresses.</li>
           <li className={styles.li}>
-            Ip Finder does not access the contact data of the device.
-          </li>
-          <li className={styles.li}>
-            Ip Finder does not access users email accounts.
+            Project Manager does not access the contact data of the device.
           </li>
           <li className={styles.li}>
-            Ip Finder does not save data related to the device.
+            Project Manager does not access users email accounts.
+          </li>
+          <li className={styles.li}>
+            Project Manager does not save data related to the device.
           </li>
           <li className={styles.li}>
             Fran Studios, not Google, is solely responsible for the content of
