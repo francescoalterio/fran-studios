@@ -3,7 +3,7 @@ import Head from "next/head";
 import PrimaryBtnLink from "../components/PrimaryBtnLink";
 import Title from "../components/Title";
 import { colors } from "../constants/colors";
-import styles from "../styles/AboutUS.module.css";
+import styles from "../styles/AboutUs.module.css";
 
 function AboutUs() {
   return (
