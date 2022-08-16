@@ -63,6 +63,7 @@
   margin: 6.5rem 10rem 0 10rem;
   text-align: center;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .dreamImg {
@@ -131,7 +132,7 @@
   }
 
   .main {
-    padding: 0 4rem;
+    padding: 0 4rem 4rem 4rem;
   }
 
   .h1 {
@@ -146,7 +147,7 @@
 
 @media (max-width: 768px) {
   .main {
-    padding: 0 3rem;
+    padding: 0 3rem 4rem 3rem;
   }
 
   .h1 {
@@ -160,6 +161,10 @@
 }
 
 @media (max-width: 600px) {
+  .main {
+    padding: 0 2rem 4rem 2rem;
+  }
+
   .h1 {
     font-size: 2rem;
   }

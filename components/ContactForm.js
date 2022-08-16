@@ -38,11 +38,11 @@ function ContactForm() {
         }
         div {
           display: flex;
-          gap: 1rem;
+          justify-content: space-between;
         }
 
         .short-form {
-          flex: 1;
+          width: 48.5%;
         }
 
         input {
@@ -51,6 +51,7 @@ function ContactForm() {
           border: 1px solid rgba(255, 255, 255, 0.5);
           border-radius: 10px;
           padding: 0 1rem;
+          color: #ffffff;
         }
         textarea {
           height: 10rem;
@@ -69,6 +70,21 @@ function ContactForm() {
           color: #ffffff;
           border: none;
           cursor: pointer;
+        }
+
+        @media (max-width: 900px) {
+          form {
+            width: 70%;
+          }
+        }
+
+        @media (max-width: 768px) {
+          form {
+            width: 85%;
+          }
+        }
+
+        @media (max-width: 600px) {
         }
       `}</style>
     </>

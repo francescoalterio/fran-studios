@@ -112,6 +112,7 @@ export default function Home() {
               fontWeight: 200,
               marginTop: "0.5rem",
               marginBottom: "2rem",
+              color: "#ffffff",
             }}
           >
             Send us an email
