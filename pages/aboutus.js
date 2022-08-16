@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import PrimaryBtnLink from "../components/PrimaryBtnLink";
 import Title from "../components/Title";
 import { colors } from "../constants/colors";
@@ -7,6 +8,28 @@ import styles from "../styles/AboutUS.module.css";
 function AboutUs() {
   return (
     <>
+      <Head>
+        <meta charset="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+
+        <title>Fran Studios | About us</title>
+        <meta property="og:title" content="Fran Studios | Home" />
+
+        <meta name="description" content="Fran Studios, About us." />
+        <meta property="og:description" content="Fran Studios, About us." />
+
+        <meta property="og:url" content="https://franstudios.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://franstudios.vercel.app/logo.png"
+        />
+
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <main className={styles.main}>
         <section className={styles.iCircleSection}>
           <div
