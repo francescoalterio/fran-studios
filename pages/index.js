@@ -11,7 +11,8 @@ import AppCard from "../components/AppCard";
 import { apps } from "../apps";
 import ContactForm from "../components/ContactForm";
 import Feature from "../components/Feature";
-import { IoHardwareChipSharp, IoCloseSharp } from "react-icons/io5";
+import { IoLayers, IoDiamondSharp, IoEarthOutline } from "react-icons/io5";
+import { GrTechnology } from "react-icons/gr";
 
 export default function Home() {
   return (
@@ -84,21 +85,21 @@ export default function Home() {
         <section className={styles.features}>
           <Feature
             title="Modern Apps"
-            description=" Modern and nice apps for any user."
+            description="Modern, pleasant and easy-to-use applications for any user."
           >
-            <IoHardwareChipSharp size={40} color="#ffffff" />
+            <IoDiamondSharp size={40} color="#ffffff" />
           </Feature>
           <Feature
-            title="Modern Apps"
-            description=" Modern and nice apps for any user."
+            title="Variety"
+            description="All types of apps focused on solving the greatest number of problems."
           >
-            <IoHardwareChipSharp size={40} color="#ffffff" />
+            <IoLayers size={40} color="#ffffff" />
           </Feature>
           <Feature
-            title="Modern Apps"
-            description=" Modern and nice apps for any user."
+            title="International"
+            description="The apps are distributed internationally for all audiences."
           >
-            <IoHardwareChipSharp size={40} color="#ffffff" />
+            <IoEarthOutline size={40} color="#ffffff" />
           </Feature>
         </section>
         <section className={styles.formContainer} id="contact-form">
