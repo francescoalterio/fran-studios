@@ -68,6 +68,7 @@ export default function Home() {
                   icon={app.icon}
                   key={app.id}
                   app={app.app}
+                  styles={{ minWidth: 140 }}
                 />
               ))}
           </div>

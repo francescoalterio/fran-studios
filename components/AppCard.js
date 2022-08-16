@@ -1,9 +1,9 @@
 import React from "react";
 
-function AppCard({ name, preview, icon, app }) {
+function AppCard({ name, preview, icon, app, styles }) {
   return (
     <>
-      <a href={app} className="container">
+      <a href={app} className="container" style={styles}>
         <div className="imgContainer">
           <img src={preview} className="preview" />
           <div className="iconContainer">
@@ -58,55 +58,53 @@ function AppCard({ name, preview, icon, app }) {
             text-align: center;
             margin-top: 2rem;
             font-weight: 700;
-            color: #ffffff
+            color: #ffffff;
           }
 
           .container:hover {
             transform: scale(1.1);
           }
 
-
           @media (max-width: 1024px) {
             .imgContainer {
-           
-            max-width: 300px;
-            min-width: 100px;
+              max-width: 300px;
+              min-width: 100px;
+            }
           }
 
           @media (max-width: 900px) {
             .imgContainer {
-           
-            max-width: 230px;
-
+              max-width: 230px;
+            }
           }
 
-           @media (max-width: 768px) {
+          @media (max-width: 768px) {
             .imgContainer {
-           
-            max-width: 150px;
- 
+              max-width: 150px;
+            }
+            .iconContainer {
+              width: 3rem;
+              height: 3rem;
+              border-radius: 0.5rem;
+            }
           }
 
           @media (max-width: 641px) {
             .imgContainer {
-           
-            max-width: 180px;
- 
+              max-width: 180px;
+            }
           }
-
           @media (max-width: 520px) {
             .imgContainer {
-           
-            max-width: 150px;
- 
+              max-width: 150px;
+            }
           }
 
           @media (max-width: 495px) {
-            .imgContainer{
-              max-width: 100%
+            .imgContainer {
+              max-width: 100%;
             }
           }
-            
         `}
       </style>
     </>
