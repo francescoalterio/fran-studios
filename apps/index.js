@@ -1,7 +1,7 @@
 export const apps = [
   {
     id: 1,
-    name: "Cocktails",
+    name: "Cocktails Library",
     preview: "/apps/cocktails/preview.jpg",
     icon: "/apps/cocktails/icon.png",
     alt: "img-cocktails-app",
