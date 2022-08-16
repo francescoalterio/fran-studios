@@ -9,8 +9,9 @@ import LogoLink from "../components/LogoLink";
 import Title from "../components/Title";
 import AppCard from "../components/AppCard";
 import { apps } from "../apps";
-import { IoHardwareChipSharp, IoCloseSharp } from "react-icons/io5";
 import ContactForm from "../components/ContactForm";
+import Feature from "../components/Feature";
+import { IoHardwareChipSharp, IoCloseSharp } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -78,29 +79,24 @@ export default function Home() {
         </section>
         <h3 className={styles.dream}>Features</h3>
         <section className={styles.features}>
-          <div className={styles.feature}>
+          <Feature
+            title="Modern Apps"
+            description=" Modern and nice apps for any user."
+          >
             <IoHardwareChipSharp size={40} color="#ffffff" />
-            <h5>Modern Apps</h5>
-            <p className={styles.featureDescription}>
-              Modern and nice apps for any user.
-            </p>
-          </div>
-          <div className={styles.feature}>
-            <IoCloseSharp size={40} color="#ffffff" />
-            <h5>Erwe Erwe</h5>
-            <p className={styles.featureDescription}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-          <div className={styles.feature}>
-            <IoCloseSharp size={40} color="#ffffff" />
-            <h5>Erwe Erwe</h5>
-            <p className={styles.featureDescription}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
+          </Feature>
+          <Feature
+            title="Modern Apps"
+            description=" Modern and nice apps for any user."
+          >
+            <IoHardwareChipSharp size={40} color="#ffffff" />
+          </Feature>
+          <Feature
+            title="Modern Apps"
+            description=" Modern and nice apps for any user."
+          >
+            <IoHardwareChipSharp size={40} color="#ffffff" />
+          </Feature>
         </section>
         <section className={styles.formContainer} id="contact-form">
           <h3 className={styles.dream} style={{ marginTop: 0 }}>
