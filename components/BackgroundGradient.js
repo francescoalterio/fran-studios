@@ -9,7 +9,7 @@ function BackgroundGradient({ children }) {
           display: flex;
           flex-direction: column;
           align-items: center;
-          background-image: linear-gradient(#000000, #241200);
+          background-image: linear-gradient(#000000, #3b1d00);
         }
       `}</style>
     </>

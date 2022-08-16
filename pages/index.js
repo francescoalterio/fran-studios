@@ -77,7 +77,7 @@ export default function Home() {
           </p>
           <img src="/dream.png" className={styles.dreamImg} />
         </section>
-        <h3 className={styles.dream}>Features</h3>
+        <h3 className={styles.featuresTitle}>Features</h3>
         <section className={styles.features}>
           <Feature
             title="Modern Apps"
