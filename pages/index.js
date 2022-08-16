@@ -48,7 +48,9 @@ export default function Home() {
         </section>
         <section className={styles.trendingAppsContainer}>
           <div className={styles.trendingTitleContainer}>
-            <Title title="Currently Trending Apps" />
+            <h3 className={styles.trendingAppsTitle}>
+              Currently Trending Apps
+            </h3>
             <PrimaryBtnLink
               title="SEE ALL"
               borderRadius={5}
