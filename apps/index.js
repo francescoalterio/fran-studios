@@ -5,7 +5,7 @@ export const apps = [
     preview: "/apps/cocktails/preview.jpg",
     icon: "/apps/cocktails/icon.png",
     alt: "img-cocktails-app",
-    app: "",
+    app: "https://play.google.com/store/apps/details?id=com.franstudios.cocktaillibrary",
     trending: true,
   },
 
